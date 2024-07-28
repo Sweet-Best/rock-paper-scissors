@@ -6,7 +6,7 @@ const button = document.querySelectorAll('button');
 
 
 rock.addEventListener('click', () => {
-    document.querySelector('#player-move').innerHTML = 'you ✊';
+    document.querySelector('#player-move').innerHTML = '✊';
     pickcomputerMove();
     playGame('rock');
 });
