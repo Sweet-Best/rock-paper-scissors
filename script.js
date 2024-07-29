@@ -3,8 +3,11 @@ const paper = document.querySelector('#paper');
 const scissors = document.querySelector('#scissors');
 const resetbtn = document.querySelector('#reset-btn');
 const button = document.querySelectorAll('button');
+const emojis = document.querySelector('.emojis');
 
-
+emojis.addEventListener('click', () => {
+    document.querySelector('.result-emojis').style.opacity = '1';
+});
 rock.addEventListener('click', () => {
     document.querySelector('#player-move').innerHTML = '✊';
     pickcomputerMove();
